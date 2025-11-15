@@ -53,9 +53,12 @@
     }
 
     .hero {
-      background: #edf3f9;
+        background: 
+    linear-gradient(rgba(195, 225, 255, 0.6), rgba(170, 213, 255, 0.3)),
+    url('TomStyle.png') center/cover no-repeat;
       border-bottom: 1px solid #d4ddea;
       padding: 2.5rem 1.5rem;
+      max-width: 100%;
     }
 
     .hero-inner {
@@ -82,9 +85,24 @@
       max-width: 36rem;
     }
 
+    .hero-text {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 1.2rem 1.5rem;
+  border-radius: 0.75rem;
+  backdrop-filter: blur(4px);
+}
+
+    .hero a {
+  color: #215273;
+}
+
     .hero .buttons {
       margin-top: 1.4rem;
     }
+
+        .hero .buttons a {
+  color: #84ccf8;
+}
 
     .btn {
       display: inline-block;
@@ -250,54 +268,711 @@
 <body>
   <header>
     <div class="top-bar">
-      <div class="logo">SeabrookVillage.co.uk</div>
+        
+      <div class="logo">Seabrook Village Kent</div>
       <nav>
-        <a href="#news">News</a>
+        <!-- <a href="#news">News</a>
         <a href="#events">Events</a>
         <a href="#amenities">Amenities</a>
-        <a href="#contact">Contact</a>
+        <a href="#contact">Contact</a> -->
       </nav>
     </div>
+    
   </header>
 
-  <div class="hero">
-    <div class="hero-inner">
-      <div>
-        <h1>Welcome to Seabrook Village Kent</h1>
-        <p>
-          Text coming soon
-        </p>
-        <div class="buttons">
-          <a href="#events" class="btn btn-primary">View upcoming events</a>
-          <a href="#news" class="btn btn-secondary">Latest village news</a>
-        </div>
+<div class="hero">
+  <div class="hero-inner">
+
+    <div>
+      <h1>Welcome to Seabrook Village Kent</h1>
+      <p class="hero-text">
+  <a href="https://en.wikipedia.org/wiki/Seabrook,_Kent">Seabrook</a> is a small coastal village in 
+  <a href="https://en.wikipedia.org/wiki/Kent">Kent</a>, set between 
+  <a href="https://en.wikipedia.org/wiki/Hythe,_Kent">Hythe</a> and 
+  <a href="https://en.wikipedia.org/wiki/Sandgate,_Kent">Sandgate</a>, with the sea at the bottom and the 
+  <a href="https://en.wikipedia.org/wiki/Kent_Downs">Kent Downs</a> rising behind it. 
+  It offers a mix of seaside calm and countryside views, all within roughly an hour of 
+  <a href="https://en.wikipedia.org/wiki/London">London</a>.
+</p>
+
+<p class="hero-text">
+  The village is named after the brook that runs alongside Horn Street, flowing into the 
+  <a href="https://en.wikipedia.org/wiki/Royal_Military_Canal">Royal Military Canal</a> before reaching the sea. 
+  This historic waterway adds to Seabrook’s character and provides a peaceful route for walking and wildlife.
+</p>
+</p>
+
+      <div class="buttons">
+        <!-- <a href="#events" class="btn btn-primary">View upcoming events</a>
+        <a href="#news" class="btn btn-secondary">Latest village news</a>-->
       </div>
-      <aside class="hero-box">
-        <h2>Village at a glance</h2>
-        <p><strong>Location:</strong> Seabrook Kent</p>
-      </aside>
+    </div>
+
+    <!-- Embedded Satellite Map -->
+    <div class="hero-map">
+<iframe 
+  width="100%" 
+  height="320" 
+  frameborder="0" 
+  scrolling="no" 
+  marginheight="0" 
+  marginwidth="0" 
+  style="border-radius: 8px;"
+  src="https://www.openstreetmap.org/export/embed.html?bbox=1.1050%2C51.0650%2C1.1250%2C51.0800&layer=mapnik&marker=51.0702%2C1.1150">
+</iframe>
+
+    </div>
+
+  </div>
+</div>
     </div>
   </div>
 
   <main>
     <div>
       <!-- News -->
-      <section id="news">
-        <h2>News</h2>
-        <div class="card">
-          <h3>x</h3>
-          <p class="meta">y</p>
-          <p>
-            z
-          </p>
+      <section id="Places of Interest">
+
+        <h2>Places of Interest</h2>
+
+<div class="card">
+  <h3>The Old Boathouse</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="The Old Boathouse">
+  <p class="meta">Historic Seabrook</p>
+  <p>
+    The Old Boathouse has long been part of Seabrook’s coastal character, recalling a time when small craft were drawn up along the shore.
+    Though its role has changed over the years, it remains a quiet reminder of the village’s close connection to the sea and the people
+    who worked on the water.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>The Fountain</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="The Fountain">
+  <p class="meta">Village Landmark</p>
+  <p>
+    The Seabrook fountain once served as a familiar meeting point and a welcome feature along the roadside. Today it is remembered as one
+    of those small community landmarks that added charm and identity to everyday village life.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>J. Arthur Rank Gong Man</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="Gong Man">
+  <p class="meta">Cultural Connection</p>
+  <p>
+    The famous “Gong Man” of the Rank Organisation has a surprising local connection, fondly recalled by many residents. Although not
+    unique to Seabrook, stories of its filming and the people associated with it bring a touch of cinematic nostalgia to the area.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>Horn Street Well</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="Horn Street Well">
+  <p class="meta">Local Heritage</p>
+  <p>
+    The well on Horn Street is part of the village’s older landscape, once serving as a valuable source of fresh water for households
+    and travellers. It stands as a quiet historical marker of how rural life unfolded before modern utilities reached the area.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>Horn Street Old Bakery</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="Horn Street Old Bakery">
+  <p class="meta">Village Trades</p>
+  <p>
+    The old bakery on Horn Street reflects a time when Seabrook supported a thriving range of independent local trades. Bakers’
+    shops were the heart of neighbourhood life, and this one is remembered for the warmth, smells, and daily routine it brought to
+    the community.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>Sir Edward Watkin</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="Sir Edward Watkin">
+  <p class="meta">Historic Figure</p>
+  <p>
+    Sir Edward Watkin was a major Victorian railway visionary whose influence extended across Kent and beyond. Though not specific
+    to Seabrook alone, his transport ambitions shaped this stretch of coastline and helped define the growth of local travel routes.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>The Britannia</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="The Britannia">
+  <p class="meta">Public House</p>
+  <p>
+    The Britannia was one of the local gathering places for residents, offering a warm welcome to villagers and visitors alike.
+    Pubs like this helped shape the social fabric of Seabrook, serving as centres of conversation, news, and community connection.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>The Brook</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="The Brook">
+  <p class="meta">Natural Feature</p>
+  <p>
+    The brook that gives Seabrook its name flows gently through the village, passing Horn Street before reaching the Royal Military
+    Canal and the sea. It is a small but defining part of the landscape, often noticed for its wildlife and quiet beauty.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>The Tramway</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="The Tramway">
+  <p class="meta">Historic Transport</p>
+  <p>
+    The old tramway once linked coastal communities and brought visitors along this stretch of Kent’s shoreline. Though long gone,
+    its route remains part of local memory and adds depth to the area’s long history of seaside travel and tourism.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>The Train Line</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="The Train Line">
+  <p class="meta">Railway Heritage</p>
+  <p>
+    The former train line through this part of the coast played an important role in shaping movement between Folkestone, Hythe, and Seabrook.
+    While the tracks no longer run, the route influenced the village layout and remains a point of interest.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>Seabrook Train Station (Sandgate)</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="Seabrook Train Station">
+  <p class="meta">Transport History</p>
+  <p>
+    The old Sandgate station, serving Seabrook and the surrounding area, was part of the short-lived branch line that once connected
+    the coast with the wider rail network. Its brief life reflects the ambitious railway plans of the era and the changing patterns of
+    travel along the Kent coastline.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>Shorncliffe and Sandgate</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="Shorncliffe and Sandgate">
+  <p class="meta">Neighbouring Areas</p>
+  <p>
+    The neighbouring communities of Shorncliffe and Sandgate share close historical and social ties with Seabrook. Each area has its
+    own distinct character, yet together they form a connected stretch of coastal life rich with stories, military history, and seaside charm.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>The Esplanade</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="The Esplanade">
+  <p class="meta">Seafront Walk</p>
+  <p>
+    The Esplanade offers one of the most beautiful walks in the area, stretching along the shoreline between Seabrook and Sandgate.
+    With wide sea views, fresh coastal air, and a relaxed pace, it remains a favourite route for residents and visitors alike.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>The Millhouse</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="The Millhouse">
+  <p class="meta">Local Landmark</p>
+  <p>
+    The Millhouse is remembered as part of Seabrook’s older architectural landscape, connected to the working rhythms of village life.
+    It reflects a time when small rural buildings played vital roles in the everyday life of the community.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>The Watch House</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="The Watch House">
+  <p class="meta">Coastal Heritage</p>
+  <p>
+    The Watch House stands as a reminder of Seabrook’s maritime past, when lookout points were essential for observing shipping and
+    watching the waters for danger. These small stations contributed to both safety and local lore along the coast.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>The Seabrook Gasworks</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="Seabrook Gasworks">
+  <p class="meta">Industrial History</p>
+  <p>
+    The Seabrook Gasworks once produced the fuel that illuminated the village and surrounding area. Although the site is long gone, it
+    marks an important chapter in the region’s transition from traditional rural life to modern utilities and infrastructure.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>The Seabrook Police Station</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="Seabrook Police Station">
+  <p class="meta">Local Services</p>
+  <p>
+    The former police station served as a local point of safety, guidance, and community presence. It reflects a time when essential
+    services operated much closer to home and were deeply woven into the daily lives of villagers.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>Nanna Fanny’s Fat Salt Beef</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="Nanna Fanny’s Fat Salt Beef">
+  <p class="meta">Village Memory</p>
+  <p>
+    Fondly remembered by locals, Nanna Fanny’s offered hearty salt beef and warm, homely food. More than just a place to eat, it became
+    a small but cherished part of Seabrook’s collective memory and community identity.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>Seabrook School</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="Seabrook School">
+  <p class="meta">Education</p>
+  <p>
+    Seabrook School has welcomed generations of children from the local area, becoming a central pillar of village life. Its long history
+    reflects the community’s commitment to learning, growth, and continuity across the years.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>The Martello Tower</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="Martello Tower">
+  <p class="meta">Napoleonic Defence</p>
+  <p>
+    Seabrook’s Martello Tower forms part of a chain of coastal fortifications built during the Napoleonic era. Today it stands as a
+    powerful reminder of the area’s defensive past and offers a striking visual link to the early 19th century.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>Princess Parade</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="Princess Parade">
+  <p class="meta">Seafront Promenade</p>
+  <p>
+    Stretching between Seabrook and Sandgate, Princess Parade offers one of the most scenic and enjoyable walks along the shoreline.
+    Loved for its open views and breezy character, it remains a favourite place for both residents and visitors.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>Imperial (Seabrook) Hotel</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="Imperial Hotel Seabrook">
+  <p class="meta">Historic Hotel</p>
+  <p>
+    The Imperial Hotel once stood proudly on Seabrook’s coastline, welcoming guests during the golden age of British seaside holidays.
+    Though its role has changed, its memory contributes to the rich narrative of tourism along this part of Kent.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>Seabrook Road</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="Seabrook Road">
+  <p class="meta">Main Route</p>
+  <p>
+    Seabrook Road is the main artery running between Hythe and Sandgate, carrying the natural flow of life through the village. Its
+    buildings and layout reflect decades of gentle growth and the changing needs of the community over time.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>Horn Street</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="Horn Street Seabrook">
+  <p class="meta">Historic Lane</p>
+  <p>
+    Horn Street is one of Seabrook’s oldest thoroughfares, known for its steep banks, valley views, and close relationship with the
+    brook that runs through the village. Its historic charm continues to shape the character of the area today.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>Lord Radnor</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="Lord Radnor">
+  <p class="meta">Local Influence</p>
+  <p>
+    The Earls of Radnor had a significant influence on land use and development across the Folkestone and Hythe district, including
+    parts of Seabrook. Their decisions helped shape the layout, amenities, and opportunities found along the coast.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>J. J. Jeans, the “King of Seabrook”</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="J. J. Jeans">
+  <p class="meta">Local Personality</p>
+  <p>
+    Known affectionately as the “King of Seabrook,” J. J. Jeans remains a colourful figure in village memory. His lively character and
+    stories continue to be shared, highlighting the warmth and individuality that shape community identity.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>Jocelyn Brooke</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="Jocelyn Brooke">
+  <p class="meta">Writer & Naturalist</p>
+  <p>
+    The writer Jocelyn Brooke drew inspiration from the Kentish landscape, including the areas around Seabrook. His work reflects a deep
+    appreciation for nature, memory, and the subtle beauty found in everyday surroundings.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>Royal Military Canal</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="Royal Military Canal">
+  <p class="meta">Historic Waterway</p>
+  <p>
+    The Royal Military Canal is one of Seabrook’s defining features, built during the Napoleonic era as a defensive barrier. Today it is
+    a peaceful green corridor, loved for walking, wildlife, canoeing, and the sense of calm it brings to the edge of the village.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>Noel Redding and Jimi Hendrix</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="Noel Redding and Jimi Hendrix">
+  <p class="meta">Music History</p>
+  <p>
+    Noel Redding, bassist for the Jimi Hendrix Experience, has connections with the Kent coastline, and stories about his time here have
+    become part of local music folklore. Their influence brings a surprising cultural note to Seabrook’s history.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>Boer War Casualties</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="Boer War Memorial">
+  <p class="meta">Historic Remembrance</p>
+  <p>
+    Several men from the surrounding area served and died in the Boer War, and their names appear on local memorials. Their stories form
+    an important part of the region’s connection to national history and the sacrifices made by small coastal communities.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>The Red House</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="The Red House">
+  <p class="meta">Local Landmark</p>
+  <p>
+    The Red House stands out in Seabrook’s architectural memory, known for its distinctive appearance and long-standing role in the
+    village landscape. Buildings like this help tell the story of how Seabrook has grown and changed through the years.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>The Sauna</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="The Sauna">
+  <p class="meta">Seafront Feature</p>
+  <p>
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>The Coffee Shop</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="The Coffee Shop">
+  <p class="meta">Local Business</p>
+  <p>
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>The Beach</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="Seabrook Beach">
+  <p class="meta">Coastline</p>
+  <p>
+    Seabrook’s beach is a peaceful stretch of shingle and sand, offering wide sea views and a calming atmosphere. Popular with families,
+    walkers, swimmers, and dog owners, it is one of the village’s best-loved natural spaces.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>The Canoe Centre</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="Canoe Centre">
+  <p class="meta">Outdoor Activity</p>
+  <p>
+    Seabrook’s canoe centre opens the door to exploring the Royal Military Canal from the water. It’s a gentle and enjoyable activity
+    that lets visitors glide through nature at a slow and peaceful pace.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>Battery Point</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="Battery Point">
+  <p class="meta">Coastal Feature</p>
+  <p>
+    Battery Point is an important landmark along the Seabrook coastline, once linked to military defence and lookout duties. Today it
+    offers panoramic sea views and a sense of connection to the area’s protective past.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>The Kiosk</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="Seabrook Kiosk">
+  <p class="meta">Seafront Spot</p>
+  <p>
+    The seaside kiosk has long served as a friendly stop for refreshments, ice creams, and snacks along the coastal path. It remains a
+    simple but much-loved feature of daily life by the sea.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>Seabrook Park</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="Seabrook Park">
+  <p class="meta">Recreation Area</p>
+  <p>
+    Seabrook Park provides a welcome green space for families, dog walkers, and local gatherings. Nestled between the village and the
+    canal, it offers an easy escape into nature without leaving the neighbourhood.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>Cliff Road</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="Cliff Road">
+  <p class="meta">Residential Area</p>
+  <p>
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>Canal Bridge</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="Canal Bridge">
+  <p class="meta">Royal Military Canal</p>
+  <p>
+    The Canal Bridge is one of the most picturesque crossing points over the Royal Military Canal, linking the beach with inland footpaths.
+    It’s a favourite local spot for enjoying the calm water and surrounding greenery.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>Tram Stop</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="Historical Tram Stop">
+  <p class="meta">Historic Transport</p>
+  <p>
+    Seabrook’s tram stop was once part of a coastal tramway that connected Hythe, Seabrook, and Folkestone. Although long gone, its
+    history adds depth to the story of public transport along the Kent shoreline.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>The Plassey Boat</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="The Plassey Boat">
+  <p class="meta">Maritime Story</p>
+  <p>
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>Beach Plane Landing (Dutch Mail)</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="Dutch Mail Plane Landing">
+  <p class="meta">Aviation Event</p>
+  <p>
+    One of Seabrook’s most unusual historical moments came when a Dutch mail plane made an emergency landing on the beach. The rare
+    incident became a memorable story that captured local attention at the time.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>The First Bus Route</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="Early Bus Route">
+  <p class="meta">Transport History</p>
+  <p>
+    The introduction of the first bus route through Seabrook changed everyday travel in the village, offering new freedom of movement
+    between the coastal communities. It marked the beginning of a more connected and accessible coastline.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>Underhill House</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="Underhill House">
+  <p class="meta">Historic Home</p>
+  <p>
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>Little Underhill</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="Little Underhill">
+  <p class="meta">Historic Cottage</p>
+  <p>
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>Suffragettes</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="Suffragettes">
+  <p class="meta">Local History</p>
+  <p>
+    The suffrage movement had strong roots across Kent, and several women associated with Sandgate, Seabrook, and Hythe played their
+    part in the national struggle. Their efforts form a powerful chapter in the social history of the local coastline.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>Georgina Fanny Cheffins, Eva (Evangeline) Lewis & Sarah Jane Carwin</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="Local Suffragettes">
+  <p class="meta">Suffrage Movement</p>
+  <p>
+    These women are among the notable suffragettes linked to the district, remembered for their determination and activism. Their stories
+    reflect courage, conviction, and a deep commitment to justice during a transformative time for women’s rights.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>1909 Protest at Lympne Castle</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="Lympne Castle Protest">
+  <p class="meta">Historic Event</p>
+  <p>
+    In 1909, local suffragettes famously staged a protest at Lympne Castle during a visit by Prime Minister H. H. Asquith. This event
+    remains one of the most dramatic episodes of Kent’s involvement in the campaign for women’s votes.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>William “Bombardier” Thomas Wells</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="William Bombardier Thomas Wells">
+  <p class="meta">Local Figure</p>
+  <p>
+    William “Bombardier” Thomas Wells is fondly remembered as a strong and memorable character within the community. Stories of his life
+    and service have become part of Seabrook’s colourful local identity.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>Don Thompson MBE</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="Don Thompson MBE">
+  <p class="meta">Public Service</p>
+  <p>
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>King Charles III Coastal Path</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="King Charles III Coastal Path">
+  <p class="meta">National Trail</p>
+  <p>
+    The new King Charles III England Coast Path passes directly through the Seabrook seafront, bringing national recognition to this
+    peaceful stretch of shoreline. The path invites walkers to explore the sea, canal, and Downs in one continuous route.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>Kent Downs</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="Kent Downs">
+  <p class="meta">Area of Outstanding Natural Beauty</p>
+  <p>
+    Rising above Seabrook, the Kent Downs form part of a designated Area of Outstanding Natural Beauty. With rolling hills, woodland
+    paths, and sweeping views, they provide a stunning natural backdrop to life in the village.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>Kids' Sandy Bit of Beach</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="Kids Sandy Beach">
+  <p class="meta">Family Spot</p>
+  <p>
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>Water Quality & Swimming</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="Water Quality and Swimming">
+  <p class="meta">Coastal Conditions</p>
+  <p>
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+<div class="card">
+  <h3>Martello Towers of Seabrook</h3>
+  <img src="https://via.placeholder.com/400x250?text=Image+Coming+Soon" alt="Martello Towers Seabrook">
+  <p class="meta">Napoleonic Defences</p>
+  <p>
+    Seabrook is home to part of the chain of Martello Towers built along the south coast during the Napoleonic era. These stout, round
+    defensive forts once guarded the shoreline against invasion and remain some of the most striking historic structures in the area.
+    Today they stand as important reminders of the region’s military past and the strategic significance of the Kent coastline.
+  </p>
+  <p><a href="#" class="card-link">Learn more</a></p>
+</div>
+
+
+
+<!-- 
+<div class="card">
+  <h3>F. T. Moore</h3>
+  <p class="meta">Local Historian</p>
+  <p>
+    F. T. Moore is remembered for documenting and preserving stories of the local area, contributing to the understanding of Seabrook’s
+    past. People like Moore help ensure that the village’s history is not lost to time.
+  </p>
+</div>
+
+<div class="card">
+  <h3>Frederick Franklin (Rosalyn Villa)</h3>
+  <p class="meta">Local Resident</p>
+  <p>
+    Frederick Franklin, associated with Rosalyn Villa, is one of the many individuals whose presence forms part of Seabrook’s social
+    history. Figures like Franklin help illuminate everyday life in the village during earlier generations.
+  </p>
+</div>
+
+<div class="card">
+  <h3>Mr Pearce</h3>
+  <p class="meta">Local Resident</p>
+  <p>
+    Mr Pearce is remembered for his place in Seabrook’s community story, representing the many individuals whose lives and work helped
+    shape the character of the village. People like him form the living memory that binds generations of residents together.
+  </p>
+</div>
+
+-->
+
         </div>
 
+        <!-- 
         <ul class="news-list">
-          <li>
-            <span class="meta">xx September 2025</span><br />
-            <span class="events-title">x</span><br />
-            x
-          </li>
           <li>
             <span class="meta">xx September 2025</span><br />
             <span class="events-title">x</span><br />
@@ -306,7 +981,7 @@
         </ul>
       </section>
 
-      <!-- Events -->
+   
       <section id="events">
         <h2>Upcoming Events</h2>
         <div class="card">
@@ -326,7 +1001,7 @@
         </ul>
       </section>
 
-      <!-- Amenities -->
+      
       <section id="amenities">
         <h2>Local Amenities</h2>
         <div class="card">
@@ -335,12 +1010,12 @@
             2
           </p>
         </div>
-      </section>
+      </section> -->
     </div>
 
     <!-- Sidebar -->
     <aside class="sidebar">
-      <section>
+     <!--  <section>
         <h2>Notice Board</h2>
         <div class="notice-board">
           <strong>Announcements:</strong>
@@ -349,18 +1024,65 @@
           </ul>
         </div>
       </section>
-
+-->
       <section id="contact">
         <h2>Key Contacts</h2>
         <ul class="contact-list">
-          <li><strong>Y</strong> x</li>
+          <li><strong>MP:</strong> Labour <a href="https://www.theyworkforyou.com/mp/26346/tony_vaughan/folkestone_and_hythe">Tony Vaughan</a>
+                </li>
+
+                <li><strong>Cllr:</strong> Green <a href="https://folkestone-hythe.moderngov.co.uk/mgUserInfo.aspx?UID=5125">Rich Holgate</a></li>
+
+                <li><strong>Cllr:</strong> Green <a href="https://folkestone-hythe.moderngov.co.uk/mgUserInfo.aspx?UID=5126">Anita Jones</a>
+                </li>
+
+                <li><strong>Cllr:</strong> Green <a href="https://folkestone-hythe.moderngov.co.uk/mgUserInfo.aspx?UID=2124">Jim Martin</a>
+                </li>
+
+                <li><strong>County Cllr: </strong> Lib Dem <a href="https://folkestone-hythe.moderngov.co.uk/mgUserInfo.aspx?UID=164">Mr Tim Prater</a>
+                </li>
         </ul>
       </section>
 
       <section>
         <h2>Useful Links</h2>
         <ul class="contact-list">
-          <li><a href="#">link</a></li>
+          <li><strong>Wikipedia:</strong> 
+  <a href="https://en.wikipedia.org/wiki/Seabrook,_Kent">Seabrook Kent</a>
+</li>
+
+<li><strong>Google Maps:</strong> 
+  <a href="https://www.google.com/maps/place/Seabrook,+Sandgate,+Folkestone+CT20+3TB/@51.0761775,1.1195713,15z">View on Google Maps</a>
+</li>
+
+<li><strong>Open Street Map:</strong> 
+  <a href="https://www.openstreetmap.org/#map=16/51.07421/1.11479">View on Open Street Maps</a>
+</li>
+
+<li><strong>Constituency:</strong> 
+  <a href="https://en.wikipedia.org/wiki/Folkestone_and_Hythe_(UK_Parliament_constituency)">Folkestone and Hythe</a>
+</li>
+
+<li><strong>Civic Parish:</strong> 
+  <a href="https://en.wikipedia.org/wiki/Hythe,_Kent">Hythe</a>
+</li>
+
+<li><strong>Ward:</strong> 
+  <a href="https://en.wikipedia.org/wiki/Hythe,_Kent">Hythe</a>
+</li>
+
+<li><strong>District council ward:</strong> 
+  <a href="https://mapit.mysociety.org/area/144824.html">Sandgate & West Folkestone</a>
+</li>
+
+<li><strong>District Council Website:</strong> 
+  <a href="https://www.folkestone-hythe.gov.uk/">Folkestone & Hythe District Council</a>
+</li>
+
+<li><strong>County Council electoral division:</strong> 
+  <a href="https://mapit.mysociety.org/area/150720.html">Cheriton, Sandgate & Hythe East</a>
+</li>
+
         </ul>
       </section>
     </aside>

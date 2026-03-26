@@ -1,11 +1,18 @@
 <!DOCTYPE html>
+<!-- laterbase
+https://www.sandgate-kent.org.uk/?s=seabrook   
+
+
+-->
+
+
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>Seabrook Village Kent</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
-
+<script src="script.js"></script>
 </head>
 <body>
   <header>
@@ -68,6 +75,11 @@
     </div>
   </div>
 
+
+
+
+
+
   <main>
     <div>
       <!-- News -->
@@ -75,8 +87,18 @@
 
         <h2>Places of Interest</h2>
 
+        <div class="card-filters" aria-label="Filter places">
+  <button class="filter-btn active" type="button" data-filter="all">All</button>
+  <button class="filter-btn" type="button" data-filter="history">History</button>
+  <button class="filter-btn" type="button" data-filter="nature">Nature</button>
+  <button class="filter-btn" type="button" data-filter="food">Food & Drink</button>
+  <button class="filter-btn" type="button" data-filter="walking">Walking</button>
+  <button class="filter-btn" type="button" data-filter="water">Water</button>
+  <button class="filter-btn" type="button" data-filter="family">Family</button>
+  <button class="filter-btn" type="button" data-filter="landmark">Landmark</button>
+</div>
 
-        <div class="card">
+        <div class="card" data-labels="pub food landmark water family">
   <h3>The Fountain</h3>
   <img src="images/new/the-fountain.jpg" alt="The Fountain Now">
   <p class="meta">A Village Landmark</p>
@@ -93,7 +115,7 @@ Nestled on the junction of Seabrook Road and Horn Street and with the brook runn
 
 
 
-<div class="card">
+<div class="card" data-labels="water family activity nature landscape">
   <h3>The Seapoint Canoe Centre</h3>
   <img src="images/new/canoe.webp" alt="Canoe Centre">
   <p class="meta">Outdoor Activity</p>
@@ -108,7 +130,7 @@ Nestled on the junction of Seabrook Road and Horn Street and with the brook runn
 
 
 
-<div class="card">
+<div class="card" data-labels="pub food landmark history walking">
   <h3>The Britannia</h3>
   <img src="images/new/britannia-now.jpg" alt="The Britannia">
   <p class="meta">Public House</p>
@@ -126,7 +148,7 @@ The Britannia Inn on Horn Street has its origins in the late 18th century, when 
   
 </div>
 
-<div class="card">
+<div class="card" data-labels="landmark family activity nature walking landscape">
   <h3>Kent Downs & Paraker Wood</h3>
   <p class="meta">Area of Outstanding Natural Beauty</p>
     <img src="images/new/paraka.jpg" alt="Paraka Wood Kent Downs">
@@ -146,7 +168,7 @@ The Britannia Inn on Horn Street has its origins in the late 18th century, when 
 
 
 
-<div class="card">
+<div class="card" data-labels="landmark water family activity history nature walking landscape">
   <h3>Royal Military Canal</h3>
   <img src="images/new/rmc-now.jpg" alt="Royal Military Canal">
   <p class="meta">Historic Waterway</p>
@@ -160,7 +182,7 @@ Today the Seabrook end of the canal still shows its original profile—a broad w
 <p><a href="https://kentdowns.org.uk/activities/hythe-and-the-royal-military-canal/" class="card-link">Kent Downs</a></p>
 </div>
 
-<div class="card">
+<div class="card" data-labels="landmark landscape">
   <h3>The Martello Tower</h3>
   <img src="images/new/martelo2.jpg" alt="Martello Tower">
   <p class="meta">Napoleonic Defence</p>
@@ -174,7 +196,7 @@ The Martello Tower at Seabrook is part of the early 19th-century chain of small 
   <p><a href="https://historicengland.org.uk/listing/heritage-at-risk/search-register/list-entry/46730" class="card-link">Historic England</a></p>
 </div>
 
-<div class="card">
+<div class="card" data-labels="landmark water family activity nature walking landscape">
   <h3>Seabrook Stream</h3>
   <img src="images/new/stream.jpg" alt="The Seabrook Stream">
   <p class="meta">Natural Feature</p>
@@ -189,7 +211,7 @@ The valley is nationally significant for its invertebrate life, with 67 species 
     <p><a href="https://designatedsites.naturalengland.org.uk/PDFsForWeb/Citation/1002707.pdf" class="card-link">Natural England</a></p>
 </div>
 
-<div class="card">
+<div class="card" data-labels="landmark water family activity nature walking landscape">
   <h3>King Charles III Coastal Path</h3>
   <img src="images/new/king.jpg" alt="King Charles III Coastal Path">
   <p class="meta">National Trail</p>
@@ -202,7 +224,7 @@ The valley is nationally significant for its invertebrate life, with 67 species 
 </div>
 
 
-<div class="card">
+<div class="card" data-labels="history">
   <h3>The Millhouse</h3>
   <img src="images/new/mill-now.jpg" alt="The Millhouse">
   <p class="meta">Local Landmark</p>
@@ -219,7 +241,7 @@ The Seabrook Stream once powered a small but significant industrial landscape al
 
 </div>
 
-<div class="card">
+<div class="card" data-labels="water activity landscape">
   <h3>The Little Sauna</h3>
   <img src="images/now/sauna.webp" alt="The Sauna">
   <p class="meta">Seafront Feature</p>
@@ -230,7 +252,7 @@ The Seabrook Stream once powered a small but significant industrial landscape al
   <p><a href="https://share.google/JIlC21BcsBZK1v0jJ" class="card-link">Google Maps</a></p>
 </div>
 
-<div class="card">
+<div class="card" data-labels="food water family activity nature walking landscape">
   <h3>Coaster Kent</h3>
   <img src="images/new/coaster.jpg" alt="The Coffee Shop">
   <p class="meta">Local Business</p>
@@ -240,7 +262,7 @@ The Seabrook Stream once powered a small but significant industrial landscape al
 </div>
 
 
-<div class="card">
+<div class="card" data-labels="food landmark water family history landmark nature walking landscape">
   <h3>The Kiosk</h3>
   <img src="images/new/kiosk.png" alt="Seabrook Kiosk">
   <p class="meta">Seafront Spot</p>
@@ -252,7 +274,7 @@ The Kiosk in Seabrook is a small seafront serving point located along the promen
 </div>
 
 
-<div class="card">
+<div class="card" data-labels="family">
   <h3>Seabrook School</h3>
   <img src="images/new/primary.webp" alt="Seabrook School">
   <p class="meta">Education</p>
@@ -264,7 +286,7 @@ Seabrook Church of England Primary School has served the village for well over a
 </div>
 
 
-<div class="card">
+<div class="card" data-labels="food water family">
   <h3>Best Tyme</h3>
   <img src="images/new/best.webp" alt="Princess Parade">
   <p class="meta">Seafront Restaurant</p>
@@ -275,7 +297,7 @@ Seabrook Church of England Primary School has served the village for well over a
   <p><a href="https://bestthymecafe.com/about/" class="card-link">Best Tyme</a></p>
 </div>
 
-<div class="card">
+<div class="card" data-labels="food family">
   <h3>The Honest Bakehouse</h3>
   <img src="images/new/bake.jpg" alt="Seabrook Park">
   <p class="meta">Bakery</p>
@@ -286,7 +308,7 @@ Seabrook Church of England Primary School has served the village for well over a
   <p><a href="https://www.facebook.com/p/The-Honesty-Bakehouse-61576891363413/" class="card-link">FaceBook Page</a></p>
 </div>
 
-<div class="card">
+<div class="card" data-labels="landmark water family activity landmark nature walking landscape">
   <h3>Seabrook Nature Reserve</h3>
   <img src="images/new/nature1.jpg" alt="Seabrook Nature Reserve">
   <p class="meta">Wildlife</p>
@@ -436,9 +458,6 @@ Once a landfill and later the subject of development proposals, the site is now 
       <div>&copy; <span id="year"></span> Seabrook Village. All rights reserved.</div>
       <div>Website maintained by me.</div>
     </div>
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
   </footer>
 </body>
 </html>
